@@ -36,7 +36,7 @@ int main() {
     file_out.open("01_output.txt");
     
     if(!file_out) {
-        cout << "OUTPUT FILE TIDAK BISA DIBUKA, ERROR, PROGRMA DIHENTIKAN" << endl;
+        cout << "OUTPUT FILE TIDAK BISA DIBUKA, ERROR, PROGRAM DIHENTIKAN" << endl;
         exit(-1);
     }
     else {
