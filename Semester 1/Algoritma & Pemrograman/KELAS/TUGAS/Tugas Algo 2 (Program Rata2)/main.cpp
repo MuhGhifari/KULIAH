@@ -3,21 +3,28 @@
 using namespace std;
 
 int main() {
-    int n;
+    float x1, x2, x3, x4, x5, total;
     
-    cout << "Masukkan Jumlah Bilangan : ";
-    cin >> n;
-    cout << endl;
+    cout << "=================== PROGRAM PENGHITUNG RATA-RATA ===================\n";
     
-    float total = 0.0;
-    for (int i = 1; i <= n; i++) {
-        float bilangan;
-        cout << "Masukkan bilangan ke-" << i << " : ";
-        cin >> bilangan;
-        total = total + bilangan;
-    }
+    cout << "Masukkan bilangan ke-1 : ";
+    cin >> x1;
     
-    total = total / n;
+    cout << "Masukkan bilangan ke-2 : ";
+    cin >> x2;
+    
+    cout << "Masukkan bilangan ke-3 : ";
+    cin >> x3;
+    
+    cout << "Masukkan bilangan ke-4 : ";
+    cin >> x4;
+    
+    cout << "Masukkan bilangan ke-5 : ";
+    cin >> x5;
+    
+    total = x1 + x2 + x3 + x4 + x5;
+    total = total / 5;
+    
     cout << "\nHasil rata-rata dari bilangan-bilangan tersebut adalah : " << total << endl;
     return 0;
 }
