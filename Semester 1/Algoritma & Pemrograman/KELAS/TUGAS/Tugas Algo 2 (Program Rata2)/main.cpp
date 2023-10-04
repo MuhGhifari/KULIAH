@@ -3,10 +3,10 @@
 using namespace std;
 
 int main() {
-    float x1, x2, x3, x4, x5, total;
+    double x1, x2, x3, x4, x5, total;
     
     cout << "=================== PROGRAM PENGHITUNG RATA-RATA ===================\n";
-    
+
     cout << "Masukkan bilangan ke-1 : ";
     cin >> x1;
     
