@@ -1,0 +1,4 @@
+alas
+10
+tinggi
+20
