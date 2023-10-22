@@ -20,13 +20,13 @@ int main() {
 			cout << "Masukkan suhu dalam Celsius : "; cin >> suhu;
 			hasil = (suhu * 9 / 5) + 32;
 			cout << "=======================================\n";
-			cout << "Suhu dalam Fahrenheit adalah : " << suhu << endl;
+			cout << "Suhu dalam Fahrenheit adalah : " << hasil << endl;
 			break;
 		case 2:
 			cout << "Masukkan suhu dalam Fahrenheit : "; cin >> suhu;
 			hasil = (suhu - 32) * 5 / 9;
 			cout << "=======================================\n";
-			cout << "Suhu dalam Celsius adalah : " << suhu << endl;
+			cout << "Suhu dalam Celsius adalah : " << hasil << endl;
 			break;
 		default:
 			cout << "=======================================\n";
