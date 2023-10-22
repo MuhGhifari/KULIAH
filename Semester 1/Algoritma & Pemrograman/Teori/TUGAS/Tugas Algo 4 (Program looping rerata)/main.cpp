@@ -3,18 +3,19 @@
 using namespace std;
 
 int main() {
-	int n;
+	int n, i = 1;
+	float total = 0.0;
 
 	cout << "Masukkan Jumlah Bilangan : ";
 	cin >> n;
 	cout << endl;
 
-	float total = 0.0;
-	for (int i = 1; i <= n; i++) {
+	while (i <= n) {
 		float bilangan;
 		cout << "Masukkan bilangan ke-" << i << " : ";
 		cin >> bilangan;
 		total = total + bilangan;
+		i++;
 	}
 
 	total = total / n;
