@@ -22,9 +22,8 @@ int main() {
     goto start;
   } else if (tolower(ulang) == 'n') {
     cout << "Terima kasih..." << endl;
-    return 0;
   } else {
     cout << "Input error, program dimatikan" << endl;
   }
-
+  return 0;
 }
