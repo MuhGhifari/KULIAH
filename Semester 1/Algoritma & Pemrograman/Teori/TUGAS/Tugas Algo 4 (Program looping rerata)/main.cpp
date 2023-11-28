@@ -26,5 +26,7 @@ int main() {
 	output << "==============================================================" << endl;
 	total = total / n;
 	output << "Maka rata-rata dari bilangan-bilangan tersebut adalah : " << total << endl;
+	output.close();
+	input.close();
 	return 0;
 }
