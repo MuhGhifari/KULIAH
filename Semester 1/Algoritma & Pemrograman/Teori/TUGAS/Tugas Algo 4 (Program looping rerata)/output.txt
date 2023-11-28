@@ -1,0 +1,4 @@
+================ PROGRAM PENGHITUNG RATA-RATA ================
+Bilangan : [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
+==============================================================
+Maka rata-rata dari bilangan-bilangan tersebut adalah : 5

@@ -16,37 +16,5 @@ Semester 1/Algoritma & Pemrograman/KELAS/TUGAS/Tugas Algo 1 (Program Penghitung 
 .tmp.drivedownload
 .tmp.driveupload
 .vscode
-
-
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+Semester 1/Algoritma & Pemrograman/Teori/Remedial UTS/main
+Semester 1/Algoritma & Pemrograman/Teori/TUGAS/Tugas Algo 4 (Program looping rerata)/main
