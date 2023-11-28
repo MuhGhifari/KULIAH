@@ -1,0 +1,10 @@
+Program selesai dieksekusi
+Hasil Eksekusi Program adalah sebagai berikut : 
+-------------------------------------------------
+
+Data 1 : 2500
+Data 2 : 2042
+Data 3 : 2301
+Data 4 : 3044
+Data 5 : 3045
+Rata-rata dari bilangan tersebut adalah : 2586.4

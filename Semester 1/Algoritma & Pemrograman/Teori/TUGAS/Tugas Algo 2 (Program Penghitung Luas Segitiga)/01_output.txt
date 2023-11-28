@@ -1,0 +1,7 @@
+program selesai dieksekusi
+Hasil Eksekusi Program adalah sebagai berikut : 
+-------------------------------------------------
+
+Alas Segitiga      = 10
+Tinggi Segitiga    = 20
+Luas Segitiga      = 100

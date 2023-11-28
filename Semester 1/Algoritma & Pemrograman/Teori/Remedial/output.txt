@@ -1,0 +1,18 @@
+Data ke-1: 2
+Data ke-2: 3
+Data ke-3: 4
+Data ke-4: 5
+Data ke-5: 6
+Data ke-6: 7
+Data ke-7: 8
+Data ke-8: 9
+Data ke-9: 10
+Data ke-10: 11
+Data ke-11: 12
+Data ke-12: 13
+Data ke-13: 14
+Data ke-14: 15
+Data ke-15: 16
+
+nilai min = 2
+nilai maks = 16

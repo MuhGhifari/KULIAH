@@ -1,7 +1,0 @@
-program selesai dieksekusi
-Hasil Eksekusi Program adalah sebagai berikut : 
--------------------------------------------------
-
-Alas Segitiga      = 3
-Tinggi Segitiga    = 2
-Luas Segitiga      = 3
