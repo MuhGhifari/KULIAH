@@ -47,7 +47,7 @@ int main() {
 
   cout << "=============\x1b[34m PROGRAM KASIR \x1b[0m=============" << endl;
   for (int j = 0; j < items.size(); j++) {
-    cout << j + 1 << ") " << items[j].nama << "\t: \x1b[34m" << formatRupiah(items[j].harga) << "\x1b[0m" << endl;
+    cout << j + 1 << ") " << items[j].nama << "\t: \x1b[36m" << formatRupiah(items[j].harga) << "\x1b[0m" << endl;
   }
   cout << "=========================================" << endl;
   
@@ -122,11 +122,11 @@ int main() {
   kembalian = tunai - total;
   cout << "\x1b[0m=========================================" << endl;
   cout << "\x1b[0m============\x1b[34m Detail Transaksi \x1b[0m===========" << endl;
-  cout << "\x1b[36mTotal Belanja\t= " << formatRupiah(total) << endl;
-  cout << "Uang Tunai\t= " << formatRupiah(tunai) << endl;
+  cout << "Total Belanja\t= \x1b[36m" << formatRupiah(total) << endl;
+  cout << "\x1b[0mUang Tunai\t= \x1b[36m" << formatRupiah(tunai) << endl;
   cout << "\x1b[0m-----------------------------------------" << endl;
-  cout << "\x1b[36mTotal Kembalian\t= " << formatRupiah(kembalian) << endl;
-  cout << "Pecahan Kembalian : " << endl;
+  cout << "Total Kembalian\t= \x1b[36m" << formatRupiah(kembalian) << endl;
+  cout << "\x1b[0mPecahan Kembalian : " << endl;
 
   const int pecahanRupiah[] = {100000, 50000, 20000, 10000, 5000, 2000, 1000, 500, 200, 100};
   int n = sizeof(pecahanRupiah) / sizeof(pecahanRupiah[0]);
@@ -141,7 +141,7 @@ int main() {
   
   for (int i = 0; i < banyakPecahan.size(); i++) {
     if (banyakPecahan[i] > 0) {
-      cout << "(" << banyakPecahan[i] << "x) " << formatRupiah(pecahanRupiah[i]) << endl;
+      cout << "\x1b[0m(\x1b[35m" << banyakPecahan[i] << "x\x1b[0m) \x1b[36m" << formatRupiah(pecahanRupiah[i]) << endl;
     }
   }
   cout << "\x1b[0m=========================================" << endl;
