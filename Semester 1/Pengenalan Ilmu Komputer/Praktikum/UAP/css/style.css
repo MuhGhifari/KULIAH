@@ -1,17 +1,33 @@
-
-
-nav li {
-  float: left;
+body {
+  margin: 0;
 }
 
-li a {
-  display: block;
+.container {
+  display: grid;
+}
+
+.banner {
+  height: 100vh;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner h1, h2{
   color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
 }
 
-nav li a:hover {
-  background-color: #111;
+.profiles {
+  height: 100vh;
+  background-color: white;
+}
+
+.materi-ganjil {
+  height: 100vh;
+  background-color: white;
+}
+
+.materi-genap {
+  height: 100vh;
+  background-color: grey;
 }
