@@ -3,9 +3,9 @@
 #include <sstream>
 
 using namespace std;
-
 string formatRupiah(int number) {
-  const locale loc("");
+  std::locale::global(std::locale("en_US.UTF-8"));
+  const std::locale loc("");
   stringstream ss;
   ss.imbue(loc);
 
@@ -20,8 +20,9 @@ int main() {
   string str;
   int tunai;
   char ulang;
-  cout <<"\x1b[0m======================\x1b[34m Program Penghitung Pecahan Rupiah \x1b[0m======================" << endl;
   input:
+  system("CLS");
+  cout <<"\x1b[0m======================\x1b[34m Program Penghitung Pecahan Rupiah \x1b[0m======================" << endl;
   cout << "\x1b[32mMasukkan total uang : \x1b[0m"; cin >> str;
   try {
     tunai = stoi(str);
