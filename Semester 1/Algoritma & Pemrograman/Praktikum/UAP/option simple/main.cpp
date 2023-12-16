@@ -23,8 +23,8 @@ int main() {
   string str;
   int tunai;
   char ulang;
-  input:
   cout <<"\x1b[0m======================\x1b[34m Program Penghitung Pecahan Rupiah \x1b[0m======================" << endl;
+  input:
   cout << "\x1b[32mMasukkan total uang : \x1b[0m"; cin >> str;
   try {
     tunai = stoi(str);
