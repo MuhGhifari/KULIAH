@@ -1,16 +1,19 @@
 #include <iostream>
 #include <vector>
-#include <sstream>
 
 using namespace std;
-string formatRupiah(int number) {
-  std::locale::global(std::locale("en_US.UTF-8"));
-  const std::locale loc("");
-  stringstream ss;
-  ss.imbue(loc);
 
-  ss << "Rp. " << number;
-  return ss.str();
+string formatRupiah(int number) {
+  string str = to_string(number);
+  int len = str.length();
+  int dlen = 3;
+
+  while (len > dlen) {
+    str.insert(len - dlen, 1, ',');
+    dlen += 4;
+    len += 1;
+  }
+  return "Rp. " + str;
 }
 
 int main() {
@@ -21,7 +24,6 @@ int main() {
   int tunai;
   char ulang;
   input:
-  system("CLS");
   cout <<"\x1b[0m======================\x1b[34m Program Penghitung Pecahan Rupiah \x1b[0m======================" << endl;
   cout << "\x1b[32mMasukkan total uang : \x1b[0m"; cin >> str;
   try {
