@@ -45,7 +45,7 @@ int main() {
   char ulang;
 
   cout << "\x1b[32mMasukkan total uang : \x1b[0m"; 
-  
+  // cin >> nominal;
   // mengeluarkan error apabila input dari user menghasilkan error atau input kurang dari 0
   if (!(cin >> nominal) || nominal < 0) {
     // membersihkan error yang dihasilkan dari input user (jika ada)
@@ -66,7 +66,7 @@ int main() {
 
       // kurang nominal dengan pecahan
       nominal = nominal - pecahanRupiah[i];
-      
+
       // tambah 1 apabila pecahan dipakai
       pecahanTerpakai[i]++;
     }
@@ -82,6 +82,10 @@ int main() {
     if (pecahanTerpakai[i] > 0) {
       cout << "\x1b[0m(\x1b[35m" << pecahanTerpakai[i] << "x\x1b[0m) \x1b[36m" << formatRupiah(pecahanRupiah[i]) << endl;
     }
+  }
+
+  if (nominal > 0) {
+    cout << "\x1b[33mSisa : " << formatRupiah(nominal) << endl;
   }
 
   konfirmasi_selesai:
