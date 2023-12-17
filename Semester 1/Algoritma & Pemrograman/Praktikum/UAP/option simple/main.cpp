@@ -84,6 +84,7 @@ int main() {
     }
   }
 
+  // output sisa (jika ada)
   if (nominal > 0) {
     cout << "\x1b[33mSisa : " << formatRupiah(nominal) << endl;
   }
