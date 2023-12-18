@@ -1,33 +1,171 @@
 body {
-  margin: 0;
+  margin: auto;
+  padding: 0;
 }
 
 .container {
-  display: grid;
+  display: flex;
+  font-family: 'Courier New', Courier, monospace;
+  flex-direction: column;
 }
 
 .banner {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
   background-color: black;
+  height: 100vh;
   justify-content: center;
   align-items: center;
 }
 
-.banner h1, h2{
+.banner h1, .banner h2{
   color: white;
+  margin: 0;
+}
+
+.banner h1 {
+  font-size: 3em;
+}
+
+.banner h2 {
+  margin-top: 10px;
+  font-size: 2.5em;
+}
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  /* letter-spacing: .15em; Adjust as needed */
+  animation: 
+    typing 2s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
 }
 
 .profiles {
-  height: 100vh;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profiles-title {
+  text-align: center;
+  margin: 0;
+  font-size: 35px;
+  letter-spacing: 3px;
+}
+
+.profiles-content {
+  display: flex;
+  justify-content: center;
+}
+
+.member {
+  flex: 0;
+  margin: 10px;
+  width: auto;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.profile-picture {
+  width: 350px;
+  height: 350px;
+  background-color: #D9D9D9;
+}
+
+.member h2 {
+  margin: 10px 0;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+.biodata {
+  font-size: 1.2em;
+  text-align: left;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.section {
+  padding: 0 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.align-section-right {
+  background-color: #D9D9D9;
+}
+
+.section-image {
+  width: 300px;
+  margin: 80px;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 100px 0 0;
+}
+
+.align-content-right {
+  text-align: right;
+  padding: 0 0 0 100px;
+}
+
+.align-content-right .button {
+  align-self: flex-end;
   background-color: white;
 }
 
-.materi-ganjil {
-  height: 100vh;
-  background-color: white;
+.section-title {
+  font-size: 3em;
+  margin: 0;
 }
 
-.materi-genap {
-  height: 100vh;
-  background-color: grey;
+.section-content p {
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+.button {
+  align-self: flex-start;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: black;
+  background-color: #D9D9D9;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #a4a4a4;
+}
+
+footer {
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: black;
+  color: white;
 }
