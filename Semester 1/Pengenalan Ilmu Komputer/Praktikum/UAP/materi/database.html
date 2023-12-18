@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>database</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pengertian Database</h1>
+    </header>
+
+    <section>
+        <h2>Pengertian Database</h2>
+        <img src="../src/database.png" alt="database" style="width: 50%; max-width: 600px; display: block; margin: 20px auto;"> 
+        <p>Pengertian database yang paling sederhana adalah kumpulan dari tabel. Satu tabel merepresentasikan suatu entitas tertentu. Suatu entitas terdiri atas beberapa atribut.</p>
+        <ul>
+            <li>Field/Kolom</li>
+            <li>Record/Baris</li>
+        </ul>
+
+        <h2>Microsoft Access</h2>
+        <p>Microsoft Access adalah sebuah program aplikasi basis data komputer rasional. Yang ditujukan untuk kalangan rumahan dan perusahaan kecil hingga menengah. Sedikit berbeda dari Ms.Access, My Structured Query Language (MySQL) merupakan program yang berjalan sebagai server untuk menyediakan multi-user agar dapat mengakses ke sejumlah database. Salah satunya adalah website yang tentu saja membutuhkan database server atau hosting untuk menampung berbagai macam informasi.</p>
+        <h3>Membuat Tabel Pada Microsoft Access:</h3>
+        <ol>
+            <li>Buka Ms. Access</li>
+            <li>Save dahulu pekerjaan anda</li>
+            <li>Pilih Create, Group Tables lalu klik Table Design Isi Field untuk tabel Mahasiswa :</li>
+            <ul>
+                <li>Ubah field size sesuai kebutuhan</li>
+                <li>Ctrl+S beri nama tabel "Data_Mahasiswa"</li>
+            </ul>
+            <li>Klik Data_Mahasiswa pada All Access Objects</li>
+            <li>Pilih tab Field, lalu klik View dan pilih ’Datasheet View’ agar dapat mengisi record pada field</li>
+            <li>Isikan record pada field yang tersedia</li>
+        </ol>
+
+        <h2>Membuat Database Di Command Prompt: MySQL</h2>
+        <p>Sedikit berbeda dari Ms.Access, MySQL merupakan program yang berjalan sebagai server untuk menyediakan multi-user agar dapat mengakses ke sejumlah database. Salah satunya adalah website yang tentu saja membutuhkan database server atau hosting untuk menampung berbagai macam informasi.</p>
+
+        <h2>Bahasa Basis Data (Database Language):</h2>
+        <ol>
+            <li>Mendefinisikan Basis Data (Data Definition Language)</li>
+            <li>Memanipulasi Basis Data (Data Manipulation Language)</li>
+            <li>Melakukan operasi-operasi tertentu pada basis data</li>
+        </ol>
+
+        <h2>XAMPP:</h2>
+        <p>Perangkat yang dapat menggabungkan 3 aplikasi kedalam satu paket (Apache, MySQL, dan PHPMyAdmin). XAMPP bisa digunakan untuk pengembangan website berbasis PHP dan juga sebagai server untuk lokal dalam pembuatan database dengan MySQL.</p>
+        <ol>
+            <li>Buka Aplikasi XAMPP</li>
+            <li>Aktifkan MySQL dan Apache dengan cara klik tombol ‘Start’</li>
+            <li>Masuk ke command prompt dengan cara klik tombol Windows + R kemudian ketikkan cmd lalu enter</li>
+            <li>Masuk ke dalam sistem MySQL dengan mengetikkan kode berikut</li>
+            <li>Jika berhasil, maka akan ada tulisan Welcome to the MySQL Monitor</li>
+        </ol>
+
+        <h3>Membuat Database Di CMD:</h3>
+        <ol>
+            <li>Membuat Database</li>
+            <code>create database namadatabase;</code>
+            <p>Contoh: membuat database "data_mahasiswa"</p>
+            <code>create database data_mahasiswa;</code>
+
+            <li>Melihat daftar database</li>
+            <code>show databases;</code>
+
+            <li>Menggunakan database yang sudah dibuat</li>
+            <code>use namadatabase;</code>
+            <p>Contoh: Menggunakan database "mahasiswa"</p>
+            <code>use data_mahasiswa;</code>
+
+            <li>Membuat Tabel "informasi"</li>
+            <code>Create table informasi (NPM varchar (3) primary key not null, nama varchar (20) not null, kelas varchar (2) not null);</code>
+
+            <li>Melihat daftar – daftar table</li>
+            <code>Show tables;</code>
+
+            <li>Melihat Struktur table</li>
+            <code>Describe namatabel;</code>
+            <p>Contoh: Melihat Struktur table "informasi"</p>
+            <code>describe informasi;</code>
+
+            <li>Mengisi record dari Tabel "informasi"</li>
+            <code>insert into informasi values ("108", "Nikita Azzahra", "3D");</code>
+
+            <li>Memeriksa Kembali tabel yang sudah dibuat</li>
+            <code>select * from informasi;</code>
+        </ol>
+    </section>
+
+</body>
+</html>
+</body>
+</html>

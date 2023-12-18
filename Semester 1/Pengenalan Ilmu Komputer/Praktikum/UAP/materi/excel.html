@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>excel</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Materi Microsoft Excel</h1>
+    </header>
+
+    <section>
+        <img src="../src/excel.png" alt="Microsoft Excel" style="width: 50%; max-width: 600px; display: block; margin: 20px auto;">       
+        <p>Merupakan perangkat lunak pengolah angka. Biasanya digunakan untuk bekerja dengan daftar data, menghitung angka-angka, membuat laporan, diagram, grafik, dan sebagainya.</p>
+
+        <h2>Materi yang Akan Dipelajari:</h2>
+        <ol>
+            <li>Fungsi Aritmatika</li>
+            <li>Fungsi Count</li>
+            <li>Fungsi IF Tunggal dan IF Bertingkat</li>
+            <li>Fungsi IF AND & IF OR</li>
+        </ol>
+
+        <h2>Fungsi Aritmatika</h2>
+        <p>Aritmatika adalah bagian dari matematika yang mempelajari tentang operasi dasar bilangan (penjumlahan, pengurangan, perkalian, dan pembagian).</p>
+
+        <h3>SUM:</h3>
+        <p>Sum digunakan untuk menjumlahkan nilai pada sel.</p>
+        <p>Menggunakan rumus: =SUM(Sel Asal : Sel Tujuan)</p>
+
+        <h3>Average:</h3>
+        <p>Average digunakan untuk mencari nilai rata-rata sel.</p>
+        <p>Menggunakan rumus: =AVERAGE(Sel Asal : Sel Tujuan)</p>
+
+        <h2>Fungsi Count</h2>
+        <p>Count digunakan untuk menghitung jumlah banyaknya sel yang terisi data.</p>
+        <p>Menggunakan rumus: =COUNT(Sel Asal : Sel Tujuan)</p>
+
+        <h3>CountBlank:</h3>
+        <p>CountBlank digunakan untuk menghitung jumlah banyaknya sel yang tidak terisi data.</p>
+        <p>Menggunakan rumus: =COUNTBLANK(Sel Asal : Sel Tujuan)</p>
+
+        <h2>Fungsi IF</h2>
+        <p>Fungsi IF akan menghasilkan sebuah nilai tertentu jika kondisi yang ditentukan terpenuhi dan akan menghasilkan nilai lainnya jika kondisi tidak terpenuhi.</p>
+
+        <h3>IF Tunggal:</h3>
+        <p>=IF(TesLogika;KondisiTerpenuhi;KondisiTidakTerpenuhi)</p>
+
+        <h3>IF Bertingkat:</h3>
+        <p>=IF(TesLogika1;KondisiTerpenuhi1;IF(TesLogika2;KondisiTerpenuhi2;Kondisi TidakTerpenuhi))</p>
+
+        <h2>Fungsi IF AND & IF OR</h2>
+        <h3>IF AND:</h3>
+        <p>=IF(AND(Uji_Logika1;Uji_Logika2;...);KondisiTerpenuhi;KondisiTidakTerpenuhi)</p>
+
+        <h3>IF OR:</h3>
+        <p>=IF(OR(Uji_Logika1;Uji_Logika2;...);KondisiTerpenuhi;KondisiTidakTerpenuhi)</p>
+
+        <h2>Fungsi LEFT, MID, dan RIGHT</h2>
+        <p>Fungsi <strong>LEFT</strong> Digunakan untuk menampilkan isi sel dihitung mulai dari karakter pertama dari kiri.</p>
+        <p><strong>Rumus</strong>: =LEFT(Sel Asal; Banyak karakter yg akan ditampilkan)</p>
+
+        <p>Fungsi <strong>MID</strong> Digunakan untuk menampilkan isi sel dihitung mulai dari indeks karakter pilihan, lalu berapa karakter yang akan ditampilkan mulai dari indeks karakter pilihan tersebut.</p>
+        <p><strong>Rumus</strong>: =MID(Sel Asal; Dimulai dari; Banyak char yg ditampilkan)</p>
+
+        <p>Fungsi <strong>RIGHT</strong> Digunakan untuk menampilkan isi sel dihitung mulai dari karakter pertama dari kanan.</p>
+        <p><strong>Rumus</strong>: =RIGHT(Sel Asal; Banyak karakter yg akan ditampilkan)</p>
+
+        <h2>Vlookup dan Hlookup</h2>
+        <p><strong>VLOOKUP</strong> Digunakan untuk mengisi data berdasarkan tabel referensi yang berbentuk kolom atau vertikal.</p>
+        <p><strong>Rumus</strong>: =VLOOKUP(Nilai Kunci; Tabel Referensi; Kolom yg digunakan; 0)</p>
+        <p><strong>Catatan untuk 0 diakhir</strong>:</p>
+        <ul>
+            <li>0 = FALSE = Exact Match</li>
+            <p>Artinya: Nilai yg dihasilkan harus sesuai dengan tabel, jika data tidak ada dalam tabel maka akan tertulis #N/A</p>
+            <li>1 = TRUE = Approximate Match</li>
+            <p>Artinya: Nilai yg dihasilkan tidak harus sesuai tabel, jika data tidak ada dalam tabel maka dia akan “mengira-ngira” nilainya tersebut. Biasanya digunakan untuk data terurut.</p>
+        </ul>
+        
+        <p><strong>HLOOKUP</strong> Digunakan untuk mengisi data berdasarkan tabel referensi yang berbentuk baris atau horizontal.</p>
+        <p><strong>Rumus</strong>: =HLOOKUP(Nilai Kunci; Tabel Referensi; Kolom yg digunakan; 0)</p>
+        <p><strong>Catatan untuk 0 diakhir</strong>:</p>
+        <ul>
+            <li>0 = FALSE = Exact Match</li>
+            <p>Artinya: Nilai yg dihasilkan harus sesuai dengan tabel, jika data tidak ada dalam tabel maka akan tertulis #N/A</p>
+            <li>1 = TRUE = Approximate Match</li>
+            <p>Artinya: Nilai yg dihasilkan tidak harus sesuai tabel, jika data tidak ada dalam tabel maka dia akan “mengira-ngira” nilainya tersebut. Biasanya digunakan untuk data terurut.</p>
+        </ul>
+        
+        <h2>Diagram dan Pivot Table</h2>
+        <p><strong>Membuat Diagram Batang</strong></p>
+<ol>
+    <li>Buatlah tabel dan isinya terlebih dahulu.</li>
+    <li>Blok tabel yang akan dijadikan diagram.</li>
+    <li>Pilih menu insert, lalu cari chart.</li>
+    <li>Pilih Column Chart sesuai kebutuhan.</li>
+    <li>Diagram akan muncul secara otomatis.</li>
+</ol>
+
+<p><strong>Pivot Table:</strong></p>
+<ol>
+    <li>Buatlah tabel terlebih dahulu beserta datanya, usahakan tidak ada sel kosong. Jika sudah, blok tabel tersebut.</li>
+    <li>Pada tab Insert, klik PivotTable.</li>
+    <li>Pada menu PivotTable, pilih Existing Worksheet lalu pada Location, klik tombol panah untuk menunjuk lokasi munculnya PivotTable.</li>
+    <li>Klik sel kosong untuk memunculkan PivotTable, Jika sudah maka klik kembali Tombol panah. Lalu klik OK.</li>
+    <li>Jika sudah muncul menu seperti di bawah, maka PivotTable siap digunakan, ceklis Field yang diinginkan untuk menggunakan PivotTable sesuai keinginan.</li>
+</ol>
+    </section>
+
+    <footer>
+    </footer>
+
+</body>
+</html>
+</body>
+</html>
