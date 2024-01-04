@@ -1,0 +1,12 @@
+.section {
+  padding: 0 20%;
+}
+
+.section-content {
+  margin: 100px 0;
+  padding: 0;
+}
+
+.section-content h2 {
+  font-size: 2em;
+}
