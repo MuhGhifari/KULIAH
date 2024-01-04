@@ -1,0 +1,13 @@
+=================== PROGRAM STANDAR DEVIASI ===================
+Data ke-1 : 56
+Data ke-2 : 65
+Data ke-3 : 74
+Data ke-4 : 75
+Data ke-5 : 76
+Data ke-6 : 77
+Data ke-7 : 80
+Data ke-8 : 81
+Data ke-9 : 91
+===============================================================
+Rata-rata				: 75
+Standar Deviasi	: 9.33333
