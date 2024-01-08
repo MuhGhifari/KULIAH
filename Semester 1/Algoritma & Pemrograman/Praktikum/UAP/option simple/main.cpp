@@ -59,6 +59,9 @@ int main() {
     goto input;
   }
 
+  cin.clear();
+  cin.ignore(INT_MAX, '\n');
+
   // loop banyak pecahan rupiah
   for (int i = 0; i < n; i++) {
     // loop selama nominal input lebih besar daripada daripada pecahan rupiah

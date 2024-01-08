@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <vector>
 
 using namespace std;
 
@@ -14,13 +15,13 @@ int main() {
   while (getline(input, str)) {
     ++i;
     v.push_back(stoi(str));
-    output << "Data ke-" << i << ": " << str << endl;
+    output << "Data ke-" << i << "\t: " << str << endl;
   }
+  input.close();
 
   output << endl;
-  output << "nilai min = " << *min_element(v.begin(), v.end()) << endl;
-  output << "nilai maks = " << *max_element(v.begin(), v.end()) << endl;
+  output << "nilai min\t\t: " << *min_element(v.begin(), v.end()) << endl;
+  output << "nilai maks\t: " << *max_element(v.begin(), v.end()) << endl;
   output.close();
-  input.close();
   return 0;
 }

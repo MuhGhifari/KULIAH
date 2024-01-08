@@ -1,13 +1,20 @@
 #include <iostream>
 #include <fstream>
+#include <sstream>
 
 using namespace std;
+
+struct DataMahasisa {
+	string nama;
+	string npm;
+	unsigned int nilai;
+};
 
 int main() {
 	ifstream input("input.txt");
 	ofstream output;
 	output.open("output.txt");
-	
+	  
 	if(!input) {
 		cout << "FILE INPUT TIDAK TERDETEKSI!!" << endl;
 		exit(1);
@@ -17,22 +24,35 @@ int main() {
 	double total = 0;
 	string str;
 
-	output << "================ PROGRAM PENGHITUNG RATA-RATA ================" << endl;
+	output << "                         LAPORAN NILAI                        " << endl;
+	output << "                    MAHASISWA ILMU KOMPUTER                   " << endl;
+	output << "                    			KELAS A & B 			                   " << endl;
+	output << "--------------------------------------------------------------" << endl;
+	output << "|" << setw(6) << left << "  No";
+	output << "|" << setw(28) << left << "       Nama Mahasiswa";
+	output << "|" << setw(14) << left << "     NPM";
+	output << "|" << setw(10) << left << "   Nilai";
+	output << "|" << endl;
+	output << "|-------------------------------------------------------------|" << endl;
 	while (getline(input,str)) {
 		++i;
 		if (i % 2 == 1) {
-			output << n + 1 << ". " << str << " : ";
+			output << "|" << setw(6) << left << "  " + to_string(n + 1);
+			output << "|" << setw(28) << left << " " + str;
+			output << "|" << setw(14) << left << " "; 
 		} else {
 			n++; 
 			total = total + stod(str); 
-			output << str << endl; 
+			output << "|" << setw(10) << left <<"    " + str;
+			output << "|" << endl; 
 		}
 	}
 	input.close();
-	output << "==============================================================" << endl;
+	output << "---------------------------------------------------------------" << endl;
 	total = total / n;
-	output << "Jumlah Data : " << n << endl;
-	output << "Rata-rata : " << total << endl;
+	output << "Jumlah Data\t: " << n << endl;
+	output << "Rata-rata\t\t: " << total << endl;
 	output.close();
+	
 	return 0;
 }
