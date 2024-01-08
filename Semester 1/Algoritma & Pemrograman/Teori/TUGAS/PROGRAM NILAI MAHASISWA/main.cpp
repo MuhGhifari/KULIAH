@@ -45,8 +45,8 @@ int main() {
 		stringstream ss(str);
 		string value;
 
-		// masukkan isi baris ke array line setiap ada semicolon ';'
-		while (getline(ss, value, ';')) {
+		// merubah isi baris menjadi array berdasarkan pemisah ','
+		while (getline(ss, value, ',')) {
 			line.push_back(value);
 		}
 
