@@ -1,58 +1,58 @@
 #include <iostream>
 #include <fstream>
-#include <sstream>
 
 using namespace std;
 
-struct DataMahasisa {
-	string nama;
-	string npm;
-	unsigned int nilai;
-};
-
 int main() {
+
+	// deklarasi file input
 	ifstream input("input.txt");
+	
+	// deklarasi file output
 	ofstream output;
-	output.open("output.txt");
-	  
-	if(!input) {
-		cout << "FILE INPUT TIDAK TERDETEKSI!!" << endl;
-		exit(1);
-	}
+	output.open("output.txt"); // membuka file output.txt untuk diedit
 
-	int i = 0, n = 0;
-	double total = 0;
-	string str;
+	// deklarasi variabel 
+	int i = 0, n = 0; // "i" sebagai banyak baris & "n" sebagai banyak data
+	double total = 0; // variabel untuk menyimpan hasil akhir
+	string str; // variabel untuk menampung teks per baris di file input.txt
 
-	output << "                         LAPORAN NILAI                        " << endl;
-	output << "                    MAHASISWA ILMU KOMPUTER                   " << endl;
-	output << "                    			KELAS A & B 			                   " << endl;
-	output << "--------------------------------------------------------------" << endl;
-	output << "|" << setw(6) << left << "  No";
-	output << "|" << setw(28) << left << "       Nama Mahasiswa";
-	output << "|" << setw(14) << left << "     NPM";
-	output << "|" << setw(10) << left << "   Nilai";
-	output << "|" << endl;
-	output << "|-------------------------------------------------------------|" << endl;
-	while (getline(input,str)) {
-		++i;
+	// mengeluarkan judul di file output.txt
+	output << "================ PROGRAM PENGHITUNG RATA-RATA ================" << endl;
+	
+	// membaca baris diulang sesuai banyak baris di file input.txt
+	while (getline(input,str)) { // isi teks di baris n dimasukkan ke var str
+		++i; // i ditambah 1 setiap perulangan
+
+		// apabila i adalah bilangan ganjil
 		if (i % 2 == 1) {
-			output << "|" << setw(6) << left << "  " + to_string(n + 1);
-			output << "|" << setw(28) << left << " " + str;
-			output << "|" << setw(14) << left << " "; 
-		} else {
-			n++; 
-			total = total + stod(str); 
-			output << "|" << setw(10) << left <<"    " + str;
-			output << "|" << endl; 
+			// mengeluarkan label data di output.txt
+			output << n + 1 << ". " << str << " : ";
+		} 
+		// apabila i bukan bilangan ganjil
+		else {
+			n++; // n ditambah 1 setiap baris genap
+			total = total + stod(str); // total ditambah isi str yg dikonversi ke double
+			output << str << endl; // mengeluarkan isi baris di output.txt
 		}
 	}
+
+	// menutup file input setelah selesai dibaca
 	input.close();
-	output << "---------------------------------------------------------------" << endl;
-	total = total / n;
-	output << "Jumlah Data\t: " << n << endl;
-	output << "Rata-rata\t\t: " << total << endl;
-	output.close();
+
+	// mengeluarkan footer di file output.txt
+	output << "==============================================================" << endl;
 	
+	// mencari rata-rata menggunakan rumus
+	total = total / n;
+	
+	// mengeluarkan n dan total di file output.txt
+	output << "Jumlah Data : " << n << endl;
+	output << "Rata-rata : " << total << endl;
+	
+	// menutup file output.txt
+	output.close();
+
+	// menutup program
 	return 0;
 }

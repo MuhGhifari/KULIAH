@@ -1,0 +1,53 @@
+                         LAPORAN NILAI                        
+                    MAHASISWA ILMU KOMPUTER                   
+                    			KELAS A & B 			                   
+--------------------------------------------------------------
+|  No  |       Nama Mahasiswa       |     NPM      |   Nilai  |
+|-------------------------------------------------------------|
+|  1   | Novia Syahrani             |              |    80    |
+|  2   | Revieta Ramadhani          |              |    79    |
+|  3   | Nabila Arra                |              |    69    |
+|  4   | M. Ghifari                 |              |    70    |
+|  5   | Abdul Fattah               |              |    78    |
+|  6   | Muhammad Ridwan            |              |    79    |
+|  7   | Fadhil Aryasatya           |              |    80    |
+|  8   | Muhammad Tegar             |              |    70    |
+|  9   | Satrio Muhammad Daffa      |              |    80    |
+|  10  | Muhammad Rafli Alamsyah    |              |    70    |
+|  11  | Muhammad Ziran             |              |    70    |
+|  12  | Sri Handayani              |              |    79    |
+|  13  | Muhammad Davfa             |              |    78    |
+|  14  | Bagas Arya                 |              |    50    |
+|  15  | Muhammad Sirajul Kahfi     |              |    60    |
+|  16  | Syaifi Akmal               |              |    70    |
+|  17  | Muhammad Satrio Pamungkas  |              |    60    |
+|  18  | Shiela Eka Artamefia       |              |    70    |
+|  19  | Reynaldi Wijaya            |              |    70    |
+|  20  | Raka Zahra Fauzan          |              |    60    |
+|  21  | Heru Purnomo               |              |    60    |
+|  22  | Yogha Aditya               |              |    100   |
+|  23  | Hafnasatul An-nisa         |              |    70    |
+|  24  | Assiyva Awalya Zulfa       |              |    70    |
+|  25  | Erlangga Deni Mahendra     |              |    60    |
+|  26  | Bimo Argya Nugraha         |              |    70    |
+|  27  | Andrian Firdaus            |              |    70    |
+|  28  | Evan sius                  |              |    70    |
+|  29  | Rizha Aditya               |              |    70    |
+|  30  | Muhammad Rayhan A          |              |    70    |
+|  31  | Tedi Ronaldi               |              |    70    |
+|  32  | Brefanza Sandy Ramadhan    |              |    70    |
+|  33  | Zidan Nugraha              |              |    60    |
+|  34  | Yudha Dwi Prasetyo         |              |    70    |
+|  35  | Asep Syahrudin             |              |    80    |
+|  36  | Rafli Dwi Sahputra         |              |    70    |
+|  37  | Imam Akbar                 |              |    60    |
+|  38  | Rendi Sahputra             |              |    70    |
+|  39  | Muhammad Ismail Sihombing  |              |    70    |
+|  40  | Rifqi Fairuzzabady         |              |    70    |
+|  41  | Adit Mubdiansyah J         |              |    60    |
+|  42  | Faris Nur Fajar            |              |    70    |
+|  43  | Jonathan Renald Hartanto   |              |    70    |
+|  44  | Muhamad Tholib             |              |    80    |
+---------------------------------------------------------------
+Jumlah Data	: 44
+Rata-rata		: 70.5
