@@ -52,17 +52,23 @@ int main() {
 
 		// cek jumlah kolom, format npm, dan format nilai
 		if (line.size() == 3 && validateNPM(line[1]) && validateNilai(line[2])) {
+			// membuat var 'student' dengan struktur 'Student'
 			Student student;
 			size_t npmLen = sizeof(student.npm)/sizeof(char);
 
+			// isi nilai var 'student'
 			student.nama = shorten(line[0], 26);
 			strncpy(student.npm, line[1].c_str(), npmLen);
 			student.nilai = stoul(line[2]);
 			students.push_back(student);
 
+			// tambah jumlah data 1
 			n++;
+
+			// total nilai ditambah dengan data nilai baris baru
 			total += student.nilai;
 		} else {
+			// keluarkan error invalid
 			cerr << "[\x1b[33mWARNING\x1b[0m] : input invalid di baris " << i << " pada file 'input.csv'. Baris dilewati..." << endl;
 		}
 	}
