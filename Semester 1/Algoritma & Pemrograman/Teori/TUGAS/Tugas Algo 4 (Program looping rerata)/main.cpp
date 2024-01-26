@@ -44,11 +44,11 @@ int main() {
 	output << "==============================================================" << endl;
 	
 	// mencari rata-rata menggunakan rumus
-	total = total / n;
 	
+	double rata = total / n;
 	// mengeluarkan n dan total di file output.txt
 	output << "Jumlah Data : " << n << endl;
-	output << "Rata-rata : " << total << endl;
+	output << "Rata-rata : " << rata << endl;
 	
 	// menutup file output.txt
 	output.close();

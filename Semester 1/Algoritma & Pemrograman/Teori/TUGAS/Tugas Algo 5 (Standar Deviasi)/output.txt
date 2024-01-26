@@ -1,13 +1,13 @@
 =================== PROGRAM STANDAR DEVIASI ===================
-Data ke-1 : 56
-Data ke-2 : 65
-Data ke-3 : 74
-Data ke-4 : 75
-Data ke-5 : 76
-Data ke-6 : 77
-Data ke-7 : 80
-Data ke-8 : 81
-Data ke-9 : 91
+1. Bagas Arya Putra : 180
+2. Abdul Fattah : 182
+3. Evan Sius : 186
+4. Muhammad Ghifari : 175
+5. Jefri Nichols : 173
+6. Faris nur Fajar : 165
+7. Aya : 158
+8. Rere : 160
 ===============================================================
-Rata-rata				: 75
-Standar Deviasi	: 9.33333
+Rata-rata				: 172.375
+Standar Deviasi	: 9.73316
+Hasil						: Standar deviasi tidak beda jauh

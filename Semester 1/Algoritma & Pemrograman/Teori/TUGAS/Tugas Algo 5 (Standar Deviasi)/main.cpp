@@ -17,27 +17,33 @@ int main() {
 
   vector<double> data;
   string str;
-  int i = 0;
+  int i = 0, n = 0;
   double total, rata, standarDeviasi;
 
   output << "=================== PROGRAM STANDAR DEVIASI ===================" << endl;
   while(getline(input, str)) {
+    i++;
     double temp;
     size_t idx;
 
-    try {
-      temp = stod(str, &idx);
-      if (idx != str.length()) {
-        cerr << "[WARNING] : input.txt di baris " << i + 1 << ", gagal mengkonversi ke angka. Baris dilewat!" << endl;
-      } else {
-        data.push_back(stod(str));
-        output << "Data ke-" << i + 1 << " : " << data[i] << endl;
-        total = total + data[i];
-        i++;
+    if (i % 2 == 1) {
+      output << n + 1 << ". " << str << " : ";
+    } else {
+      try {
+        temp = stod(str, &idx);
+        if (idx != str.length()) {
+          cerr << "[WARNING] : input.txt di baris " << i << ", gagal mengkonversi ke angka. Baris dilewat!" << endl;
+        } else {
+          n++;
+          int x = stod(str);
+          data.push_back(x);
+          output << str << endl;
+          total = total + x;
+        }
       }
-    }
-    catch(const exception& e) {
-      cerr << "[WARNING] : input.txt di baris " << i + 1 << ", gagal mengkonversi ke angka. Baris dilewat!" << endl;
+      catch(const exception& e) {
+        cerr << "[WARNING] : input.txt di baris " << i << ", gagal mengkonversi ke angka. Baris dilewat!" << endl;
+      }
     }
   }
   input.close();
@@ -55,6 +61,19 @@ int main() {
   
   output << "Rata-rata\t\t\t\t: " << rata << endl;
   output << "Standar Deviasi\t: " << standarDeviasi << endl;
+
+  string hasil;
+
+  if (standarDeviasi > 0 && standarDeviasi < 10) {
+    hasil = "Standar deviasi tidak beda jauh";
+  } else if (standarDeviasi < rata) {
+    hasil = "Standar deviasi sedikit jauh";
+  } else {
+    hasil = "Standar deviasi berbeda jauh";
+  }
+
+  output << "Hasil\t\t\t\t\t\t: " << hasil << endl;
+
   output.close();
   
   return 0;
