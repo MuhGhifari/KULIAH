@@ -1,6 +1,8 @@
 #include <iostream>
 #include <fstream>
-#include <sstream>
+#include <sstream> 
+#include <iomanip> 
+#include <random>
 #include <string>
 #include <vector>
 #include <map>
@@ -23,9 +25,11 @@ int main() {
   vector<vector<string>> tabelHasil;
   vector<string> kandidat = {"01", "02", "03"};
   map<string, int> suaraKandidat;
-  int totalSuara;
-
+  int totalSuara = 0;
   while (getline(fileInput, str)) {
+    if (totalSuara >= 300) {
+      break;
+    }
     suaraKandidat[str]++;
     totalSuara++;
   }
@@ -37,8 +41,14 @@ int main() {
     int jumlahSuara = suaraKandidat[paslon];
 
     if (paslon == "02") {
-      int suaraTambahan = rand() % 5;
-      jumlahSuara = jumlahSuara + suaraTambahan;
+      random_device random;
+      mt19937 gen(random());
+      uniform_int_distribution<int> distribution(50, 100);
+      int suaraTambahan = distribution(gen);
+
+      cout << "Suara Tambahan : " << suaraTambahan << endl;
+      jumlahSuara += suaraTambahan;
+      totalSuara += suaraTambahan;
     }
 
     persen = (static_cast<float>(jumlahSuara) / totalSuara) * 100;
@@ -59,10 +69,6 @@ int main() {
 }
 
 void printTabel(const vector<vector<string>>& tabel, ofstream& output) {
-  /* 
-  Menghitung lebar kolom dengan mencari
-  string yang paling panjang di kolom 
-  */
   vector<size_t> lebarKolom(tabel[0].size(), 0);
   for (const auto& baris : tabel) {
     for (size_t i = 0; i < baris.size(); ++i) {
@@ -70,13 +76,11 @@ void printTabel(const vector<vector<string>>& tabel, ofstream& output) {
     }
   }
 
-  // Cetak border atas
   for (size_t i = 0; i < lebarKolom.size(); ++i) {
     output << "+" << string(lebarKolom[i] + 2, '-');
   }
   output << "+" << endl;
 
-  // Cetak konten tabel dengan border
   auto indeksTabel = tabel.begin();
   for (const auto& baris : tabel) {
     for (size_t i = 0; i < baris.size(); ++i) {
@@ -92,7 +96,6 @@ void printTabel(const vector<vector<string>>& tabel, ofstream& output) {
     indeksTabel++;
   }
 
-  // Cetak border bawah
   for (size_t i = 0; i < lebarKolom.size(); ++i) {
     output << "+"<< string(lebarKolom[i] + 2, '-');
   }
