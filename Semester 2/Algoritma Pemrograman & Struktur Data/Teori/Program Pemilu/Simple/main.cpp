@@ -115,6 +115,29 @@ int main() {
   fileInput.close();
 
   /*
+  Membuat suara tambahan dengan nomor acak
+  */
+
+  // Deklarasi variabel 'acak' dengan class random_device
+  random_device acak;
+
+  // Mendefinisikan generator nomor acak dengan metode "Mersenne Twister"
+  mt19937 gen(acak());
+
+  // menyatakan distribusi yg diinginkan adalah dari angka 50 sampai 100
+  uniform_int_distribution<int> distribution(50, 100);
+
+  // menghasilkan nomor acak antara 50-100 menggunakan metode "Mersenne Twister"
+  int suaraTambahan = distribution(gen);
+
+  // menampilkan banyak suara tambahan pada console
+  cout << "Suara Tambahan : " << suaraTambahan << endl;
+
+  // menambahkan suara tambahan pada suara kandidat "02" dan total suara
+  suaraKandidat["02"] += suaraTambahan;
+  totalSuara += suaraTambahan;
+
+  /*
   Menghitung persentase suara tiap kandidat
   */
 
@@ -139,29 +162,6 @@ int main() {
 
     // menyimpan jumlah suara paslon yg sedang di-loop
     int jumlahSuara = suaraKandidat[paslon];
-
-    // apabila paslon adalah "02", tambah suara dgn angka acak dari 50-100
-    if (paslon == "02") {
-
-      // Deklarasi variabel 'acak' dengan class random_device
-      random_device acak;
-
-      // Mendefinisikan generator nomor acak dengan metode "Mersenne Twister"
-      mt19937 gen(acak());
-
-      // menyatakan distribusi yg diinginkan adalah dari angka 50 sampai 100
-      uniform_int_distribution<int> distribution(50, 100);
-
-      // menghasilkan nomor acak antara 50-100 menggunakan metode "Mersenne Twister"
-      int suaraTambahan = distribution(gen);
-
-      // menampilkan banyak suara tambahan pada console
-      cout << "Suara Tambahan : " << suaraTambahan << endl;
-
-      // menambahkan suara tambahan pada suara kandidat dan total suara
-      jumlahSuara += suaraTambahan;
-      totalSuara += suaraTambahan;
-    }
 
     /*
     Menghitung persentase suara kandidat yang sedang di-loop.
