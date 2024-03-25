@@ -134,6 +134,9 @@ int main() {
       } 
     }
 
+    // ubah status validasi menjadi false apabila jumlah kolom input beda dengan jumlah kandidat
+    if (input.size() != kandidat.size()) { inputValid = false; }
+
     // mengeluarkan pesan error apabila input tidak valid dan totalSuaraTps melebih batas maksimal
     if (!inputValid || totalSuaraTps > batasMaksimalSuaraTps) {
       cerr << "[\x1b[31mERROR\x1b[0m] : baris ke-" << noBaris << " di file 'input.csv' tidak valid!" << endl;
